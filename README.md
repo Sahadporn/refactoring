@@ -21,6 +21,12 @@ import model.*
 ----------
 In ```createKeyListeners()```
 
+*I choose to ignore the switch statements.
+
+According to Refactoring Guru: 'When a switch operator performs simple actions, there’s no reason to make code changes.'
+Since there are 3 switch statements in total (including the one in ViewManager class) and all of them perform simple actions ex. change boolean attribute value.
+It would just make the code more clustered if I refactor all 3 of them with polymorphism or design pattern. 
+
 ```java
  private void createKeyListeners() {
         // KeyPressed
